@@ -13,7 +13,7 @@ function DoctorAppointment(){
      try{
          const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/doctor/doctor-appointment'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/doctor/doctor-appointment'],
             withCredentials:true,
             data:{userId:user._id},
             headers:{
@@ -39,7 +39,7 @@ function DoctorAppointment(){
         try{
             const res=await axios({
               method:'post',
-              url:['http://localhost:1234/api/doctor/status-change'],
+              url:['https://doctor-appointment-backend-7te2.onrender.com/api/doctor/status-change'],
               withCredentials:true,
               data:{appointmentId:record._id,status}
             })
