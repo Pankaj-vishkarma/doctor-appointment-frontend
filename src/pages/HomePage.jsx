@@ -11,7 +11,7 @@ function HomePage(){
       try{
          const res=await axios({
           method:'get',
-          url:['http://localhost:1234/api/user/getalldoctor'],
+          url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/getalldoctor'],
           withCredentials:true
         })
         if(res.data.success){
