@@ -12,7 +12,7 @@ function Appointment(){
      try{
          const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/user/user-appointment'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/user-appointment'],
             withCredentials:true,
             data:{userId:user._id},
             headers:{
