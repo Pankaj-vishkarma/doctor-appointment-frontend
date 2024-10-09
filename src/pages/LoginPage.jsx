@@ -14,7 +14,7 @@ function LoginPage(){
            dispatch(showLoading())
            const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/user/login'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/login'],
             withCredentials:true,
             data:values
            })
