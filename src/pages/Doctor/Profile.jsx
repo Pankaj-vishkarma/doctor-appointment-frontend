@@ -20,7 +20,7 @@ function Profile(){
       try{
         const res=await axios({
           method:'post',
-          url:['http://localhost:1234/api/doctor/getdoctorinfo'],
+          url:['https://doctor-appointment-backend-7te2.onrender.com/api/doctor/getdoctorinfo'],
           withCredentials:true,
           data:{userId:params.id},
           headers:{
@@ -48,7 +48,7 @@ function Profile(){
           dispatch(showLoading())
           const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/doctor/updateprofile'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/doctor/updateprofile'],
             withCredentials:true,
             data:{...values,userId:user._id,timings:[moment(values.timings[0]).format("HH:mm"),moment(values.timings[1]).format("HH:mm")]},
             headers:{
