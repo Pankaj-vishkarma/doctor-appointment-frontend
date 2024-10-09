@@ -17,7 +17,7 @@ function ApplyDoctor(){
           dispatch(showLoading())
           const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/user/applydoctor'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/applydoctor'],
             withCredentials:true,
             data:{...values,userId:user._id},
             timings: [
