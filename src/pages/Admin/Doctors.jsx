@@ -10,7 +10,7 @@ function Doctors(){
           try{
             const user=await axios({
                 method:'get',
-                url:['http://localhost:1234/api/admin/doctors'],
+                url:['https://doctor-appointment-backend-7te2.onrender.com/api/admin/doctors'],
                 withCredentials:true,
             })
              
@@ -32,7 +32,7 @@ function Doctors(){
           try{
               const res=await axios({
                 method:'post',
-                url:['http://localhost:1234/api/admin/chnageaccountstatus'],
+                url:['https://doctor-appointment-backend-7te2.onrender.com/api/admin/chnageaccountstatus'],
                 withCredentials:true,
                 data:{doctorId:record._id,userId:record.userId,status:status},
                 headers:{
