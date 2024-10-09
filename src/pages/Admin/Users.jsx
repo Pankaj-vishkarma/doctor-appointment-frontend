@@ -9,7 +9,7 @@ function Users(){
       try{
         const user=await axios({
             method:'get',
-            url:['http://localhost:1234/api/admin/users'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/admin/users'],
             withCredentials:true,
             headers:{
                 Authorization:`Bearer ${localStorage.getItem("token")}`
