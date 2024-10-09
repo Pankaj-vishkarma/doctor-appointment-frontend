@@ -14,7 +14,7 @@ function NotificationPage(){
            dispatch(showLoading())
            const res=await axios({
              method:'post',
-             url:['http://localhost:1234/api/user/getallnotification'],
+             url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/getallnotification'],
              withCredentials:true,
              data:{userId:user._id},
              headers:{
@@ -41,7 +41,7 @@ function NotificationPage(){
             dispatch(showLoading())
             const res=await axios({
               method:'post',
-              url:['http://localhost:1234/api/user/deleteallnotification'],
+              url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/deleteallnotification'],
               withCredentials:true,
               data:{userId:user._id},
               headers:{
