@@ -14,7 +14,7 @@ function RegisterPage(){
          dispatch(showLoading())
          const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/user/register'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/register'],
             withCredentials:true,
             data:values
          })
