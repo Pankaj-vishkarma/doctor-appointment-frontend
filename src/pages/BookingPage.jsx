@@ -42,7 +42,7 @@ function BookingPage(){
          dispstch(showLoading())
          const res=await axios({
           method:'post',
-          url:['http://localhost:1234/api/user/book-appointment'],
+          url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/book-appointment'],
           withCredentials:true,
           data:{
             userId:user._id,
@@ -73,7 +73,7 @@ function BookingPage(){
           dispstch(showLoading())
           const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/user/check-availability'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/check-availability'],
             withCredentials:true,
             data:{doctorId:params.doctorId,date,time},
             headers:{
