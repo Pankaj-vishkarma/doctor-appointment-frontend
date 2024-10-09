@@ -19,7 +19,7 @@ function BookingPage(){
       try{
            const res=await axios({
             method:'post',
-            url:['http://localhost:1234/api/doctor/getsingledoctor'],
+            url:['https://doctor-appointment-backend-7te2.onrender.com/api/doctor/getsingledoctor'],
             withCredentials:true,
             data:{doctorId:params.doctorId}
            })
