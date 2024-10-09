@@ -16,7 +16,7 @@ export default function ProtectedRoute({children}){
             dispatch(showLoading())
             const res=await axios({
                 method:'get',
-                url:['http://localhost:1234/api/user/getdata'],
+                url:['https://doctor-appointment-backend-7te2.onrender.com/api/user/getdata'],
                 withCredentials:true,
                 token: localStorage.getItem("token"),
               
